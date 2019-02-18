@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/numero"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/partearriba"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="0"
+            android:textSize="200dp"
+            android:id="@+id/suma"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/boton2"
+        android:layout_centerHorizontal="true"
+        android:text="volver a jugar"
+        android:id="@+id/returngame"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/boton1"
+        android:text="1"/>
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/boton1"
+        android:text="2"/>
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/boton3"
+        android:layout_toRightOf="@id/boton2"
+        android:text="3"/>
+    <Button
+        android:id="@+id/boton4"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/boton3"
+        android:text="4"/>
+    <Button
+        android:id="@+id/boton5"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/boton4"
+        android:text="5"/>
+
+
+
+
+</RelativeLayout>
